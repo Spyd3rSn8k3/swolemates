@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let config = ParseClientConfiguration { (swoleMatesConfig) in
+            swoleMatesConfig.applicationId = "swole_mates_unique_id"
+            swoleMatesConfig.server = "http://swole-mates.herokuapp.com/parse"
+            swoleMatesConfig.clientKey = "@V3ryS3cur3K3y"
+        }
+        
+        //parse-dashboard --appId swole_mates_unique_id --masterKey @V3ryS3cur3K3y --serverURL "http://swole-mates.herokuapp.com/parse"
+        
+        Parse.initialize(with: config)
         return true
     }
 
