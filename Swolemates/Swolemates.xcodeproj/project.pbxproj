@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		AAB62D8C0DA013B274E33A48 /* Pods_Swolemates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C32F83CD354363AD4B4DD80 /* Pods_Swolemates.framework */; };
+		C900172522495D0F008733A0 /* arm_logo_100.png in Resources */ = {isa = PBXBuildFile; fileRef = C900172422495D0F008733A0 /* arm_logo_100.png */; };
 		C96AF6AB224554270020C5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AF6AA224554270020C5A5 /* AppDelegate.swift */; };
 		C96AF6AD224554270020C5A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96AF6AC224554270020C5A5 /* ViewController.swift */; };
 		C96AF6B0224554280020C5A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96AF6AE224554280020C5A5 /* Main.storyboard */; };
 		C96AF6B3224554280020C5A5 /* Swolemates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C96AF6B1224554280020C5A5 /* Swolemates.xcdatamodeld */; };
 		C96AF6B52245542C0020C5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96AF6B42245542C0020C5A5 /* Assets.xcassets */; };
 		C96AF6B82245542C0020C5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96AF6B62245542C0020C5A5 /* LaunchScreen.storyboard */; };
+		C9EDE1A6224AADE70030150E /* swolemates_logo_rect.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EDE1A5224AADE60030150E /* swolemates_logo_rect.png */; };
+		C9EDE1A8224AADFC0030150E /* swolemates_name_only_rect.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EDE1A7224AADFC0030150E /* swolemates_name_only_rect.png */; };
+		C9EDE1AA224AAE0C0030150E /* swolemates_logo_only_square.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EDE1A9224AAE0B0030150E /* swolemates_logo_only_square.png */; };
+		C9EDE1AC224AB0400030150E /* swolemates_rect_300px.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EDE1AB224AB0400030150E /* swolemates_rect_300px.png */; };
+		C9EDE1AE224C11240030150E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDE1AD224C11240030150E /* Utils.swift */; };
+		C9EDE1B2224C17700030150E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EDE1B1224C17700030150E /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38B9ACE2C365ECE4A978D312 /* Pods-Swolemates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swolemates.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swolemates/Pods-Swolemates.release.xcconfig"; sourceTree = "<group>"; };
 		5C32F83CD354363AD4B4DD80 /* Pods_Swolemates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swolemates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C900172422495D0F008733A0 /* arm_logo_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arm_logo_100.png; sourceTree = "<group>"; };
 		C96AF6A7224554270020C5A5 /* Swolemates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swolemates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96AF6AA224554270020C5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C96AF6AC224554270020C5A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +35,12 @@
 		C96AF6B42245542C0020C5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96AF6B72245542C0020C5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C96AF6B92245542C0020C5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EDE1A5224AADE60030150E /* swolemates_logo_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swolemates_logo_rect.png; sourceTree = "<group>"; };
+		C9EDE1A7224AADFC0030150E /* swolemates_name_only_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swolemates_name_only_rect.png; sourceTree = "<group>"; };
+		C9EDE1A9224AAE0B0030150E /* swolemates_logo_only_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swolemates_logo_only_square.png; sourceTree = "<group>"; };
+		C9EDE1AB224AB0400030150E /* swolemates_rect_300px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swolemates_rect_300px.png; sourceTree = "<group>"; };
+		C9EDE1AD224C11240030150E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C9EDE1B1224C17700030150E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = /Users/cortlinpdunlevy/Documents/GitHub/swolemates/Swolemates/Swolemates/SignUpViewController.swift; sourceTree = "<absolute>"; };
 		E9A36046241E08A93D470D9B /* Pods-Swolemates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swolemates.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swolemates/Pods-Swolemates.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				C96AF6AA224554270020C5A5 /* AppDelegate.swift */,
+				C9EDE1B1224C17700030150E /* SignUpViewController.swift */,
 				C96AF6AC224554270020C5A5 /* ViewController.swift */,
+				C9EDE1A9224AAE0B0030150E /* swolemates_logo_only_square.png */,
+				C9EDE1A5224AADE60030150E /* swolemates_logo_rect.png */,
+				C9EDE1AB224AB0400030150E /* swolemates_rect_300px.png */,
+				C9EDE1A7224AADFC0030150E /* swolemates_name_only_rect.png */,
+				C900172422495D0F008733A0 /* arm_logo_100.png */,
 				C96AF6AE224554280020C5A5 /* Main.storyboard */,
+				C9EDE1AD224C11240030150E /* Utils.swift */,
 				C96AF6B42245542C0020C5A5 /* Assets.xcassets */,
 				C96AF6B62245542C0020C5A5 /* LaunchScreen.storyboard */,
 				C96AF6B92245542C0020C5A5 /* Info.plist */,
@@ -151,9 +172,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EDE1AA224AAE0C0030150E /* swolemates_logo_only_square.png in Resources */,
 				C96AF6B82245542C0020C5A5 /* LaunchScreen.storyboard in Resources */,
 				C96AF6B52245542C0020C5A5 /* Assets.xcassets in Resources */,
+				C9EDE1A8224AADFC0030150E /* swolemates_name_only_rect.png in Resources */,
 				C96AF6B0224554280020C5A5 /* Main.storyboard in Resources */,
+				C9EDE1A6224AADE70030150E /* swolemates_logo_rect.png in Resources */,
+				C900172522495D0F008733A0 /* arm_logo_100.png in Resources */,
+				C9EDE1AC224AB0400030150E /* swolemates_rect_300px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +234,8 @@
 				C96AF6AD224554270020C5A5 /* ViewController.swift in Sources */,
 				C96AF6B3224554280020C5A5 /* Swolemates.xcdatamodeld in Sources */,
 				C96AF6AB224554270020C5A5 /* AppDelegate.swift in Sources */,
+				C9EDE1AE224C11240030150E /* Utils.swift in Sources */,
+				C9EDE1B2224C17700030150E /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

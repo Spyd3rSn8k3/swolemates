@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/cortlinpdunlevy/Documents/GitHub/swolemates/Swolemates/Swolemates/SignUpViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Swolemates.xcodeproj">
    </FileRef>
    <FileRef
