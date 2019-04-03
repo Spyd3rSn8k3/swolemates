@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Parse
 
 extension UIViewController {
     
@@ -73,6 +74,59 @@ extension UIViewController {
         let passwordRegex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*()\\-_=+{}|?>.<,:;~`’]{8,15}$"
         valid = NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: passString)
         return valid
+    }
+    
+    func newUser(emailText: String, passText: String) -> Bool {
+        //A userSuccess boolean will be returned to ensure the new user was created
+        var userSuccess = Bool()
+        //Create the PF User object and assign the username and password from the text fields
+        let user = PFUser()
+        user.username = emailText
+        user.password = passText
+        user.email = emailText
+        
+        user.signUpInBackground { (success, error) in
+            if success == false {
+                userSuccess = success
+            }
+            else {
+                userSuccess = success
+            }
+        }
+        return userSuccess
+    }
+    
+    func addPerson(firstName: String, lastName: String, emailText: String) {
+        //Create the Person object and assign the required fields
+        let person = PFObject(className: "Person")
+        //Pull the new user record that was just created
+        let query = PFUser.query()
+        query?.whereKey("username", equalTo: emailText)
+        do {
+            let users = try query?.findObjects()
+            if let users = users {
+                for user in users {
+                    if let userObjectId = user.objectId {
+                        person["userId"] = userObjectId
+                        person["firstName"] = firstName
+                        person["lastName"] = lastName
+                        person.saveInBackground(block: { (success, error) in
+                            if success == false {
+                                print(success)
+                            }
+                            else {
+                                print(success)
+                            }
+                        })
+                    }
+                    else {
+                        print("Unsuccessful")
+                    }
+                }
+            }
+        } catch {
+            print("Unable to create person record")
+        }
     }
     
 }
